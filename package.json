@@ -1,0 +1,19 @@
+{
+  "name": "nhl-insight-hub-intro",
+  "version": "1.0.0",
+  "description": "Intro web app using the NHL API, Chart.js, AOS, Express, and Supabase.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"console.log('No automated tests yet. Manually test the pages and API endpoints listed in docs/README.md.')\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

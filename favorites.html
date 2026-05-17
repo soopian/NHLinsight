@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Teams</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>NHL Insight Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="section-title">Save a Favorite Team</h2>
+    <p class="muted">This page uses Supabase through the backend. If Supabase keys are missing, it uses local fallback demo data.</p>
+    <form id="favorite-form">
+      <input id="team-name" placeholder="Team name, ex: Washington Capitals" required>
+      <input id="team-abbrev" placeholder="Abbreviation, ex: WSH" required maxlength="4">
+      <textarea id="team-note" placeholder="Optional note"></textarea>
+      <button type="submit">Save Favorite</button>
+    </form>
+    <p id="favorites-source" class="muted"></p>
+    <div id="favorites-container" class="grid"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 NHL Insight Hub</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/favorites.js"></script>
+</body>
+</html>

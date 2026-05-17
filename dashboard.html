@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NHL Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>NHL Insight Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="section-title">Today's Scores</h2>
+    <p id="scores-source" class="muted"></p>
+    <div id="scores-container" class="grid"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Top Teams by Points</h2>
+    <p id="leaders-source" class="muted"></p>
+    <div id="leaders-container" class="grid"></div>
+    <div class="chart-card">
+      <canvas id="standingsChart"></canvas>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 NHL Insight Hub</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
